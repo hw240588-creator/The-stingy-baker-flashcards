@@ -5626,10 +5626,10 @@ function checkAnswer() {
   if (!currentCard) return;
   const userAnswer = answerEl.value.trim().toLowerCase();
   if (userAnswer === currentCard.correct.toLowerCase()) {
-    feedbackEl.textContent = "✅ Richtig!";
+    feedbackEl.textContent = "✅ Correct!";
     feedbackEl.style.color = "green";
   } else {
-    feedbackEl.textContent = `❌ Falsch. Richtige Antwort: ${currentCard.correct}`;
+    feedbackEl.textContent = `❌ Incorrect. : ${currentCard.correct}`;
     feedbackEl.style.color = "red";
   }
 }
@@ -5661,3 +5661,4 @@ loadCard(currentIndex);
 
 </body>
 </html>
+
