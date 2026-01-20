@@ -5629,7 +5629,7 @@ function checkAnswer() {
     feedbackEl.textContent = "✅ Correct!";
     feedbackEl.style.color = "green";
   } else {
-    feedbackEl.textContent = `❌ Incorrect. : ${currentCard.correct}`;
+    feedbackEl.textContent = `❌ Incorrect: ${currentCard.correct}`;
     feedbackEl.style.color = "red";
   }
 }
@@ -5661,4 +5661,5 @@ loadCard(currentIndex);
 
 </body>
 </html>
+
 
